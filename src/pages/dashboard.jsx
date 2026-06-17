@@ -198,28 +198,8 @@ const Dashboard = () => {
                 }}
               >
                 {/* Logo placed exactly inside the white circular space */}
-                <div 
-                  className="position-absolute bg-white rounded-circle d-flex align-items-center justify-content-center shadow-lg" 
-                  style={{ 
-                    width: '300px', 
-                    height: '300px', 
-                    right: '-60px', 
-                    top: '-60px',
-                    padding: '40px',
-                    zIndex: 2
-                  }}
-                >
-                  <img 
-                    src="/logo.png" 
-                    alt="DLCF Logo" 
-                    style={{ 
-                      width: '140px', 
-                      height: '140px', 
-                      objectFit: 'contain',
-                      marginRight: '30px',
-                      marginTop: '30px'
-                    }} 
-                  />
+                <div className="hero-logo-circle">
+                  <img src="/logo.png" alt="DLCF Logo" />
                 </div>
                 
                 {/* Visual geometric blobs for premium aesthetics */}
@@ -227,13 +207,13 @@ const Dashboard = () => {
 
                 <div className="row align-items-center position-relative z-1 g-4">
                   {/* Left Column: Text & Search */}
-                  <div className="col-12 col-md-8 col-lg-7 d-flex flex-column justify-content-between" style={{ minHeight: '220px' }}>
+                  <div className="col-12 col-md-8 col-lg-7 d-flex flex-column justify-content-between hero-text-container" style={{ minHeight: '220px' }}>
                     <div>
                       <span className="badge bg-warning bg-opacity-20 text-warning px-3 py-2 rounded-pill fs-7 mb-3 border border-warning border-opacity-35 fw-semibold tracking-wide">
                         † DEEPER LIFE CAMPUS FELLOWSHIP
                       </span>
-                      <h1 className="serif-font fw-black display-5 mb-3">DLCF LASUojo E-Library</h1>
-                      <p className="lead text-white-50 fs-6 mb-4">
+                      <h1 className="serif-font mb-3 hero-title">DLCF LASUojo E-Library</h1>
+                      <p className="mb-4 hero-lead">
                         Providing our students with premium academic materials and spiritual literature to excel in their academic pursuits and build a vibrant Christian faith.
                       </p>
                     </div>
